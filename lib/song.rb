@@ -13,7 +13,7 @@ class Song
     self.artist = artist
     self.genre = genre
 
-    @@artists << name
+    @@artists << name if !(@@artists.include?(artists))
     @@count += 1
     @@genres << genre if !(@@genres.include?(genre))
 
