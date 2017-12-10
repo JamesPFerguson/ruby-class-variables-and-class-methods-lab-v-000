@@ -17,13 +17,10 @@ class Song
     @genre = genre
     @@count += 1
 
-    if !(@@artists.include?(artist))
       @@artists << artist
-    end
 
-    if !(@@genres.include?(genre))
       @@genres << genre
-    end
+
 
     if !(@@genre_count.has_key?(genre))
       @@genre_count[genre] = 0
