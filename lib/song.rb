@@ -1,6 +1,6 @@
 class Song
 
-  @@songs = 0
+  @@count = 0
   @@artists = []
   @@genres = []
   @@genre_count = {}
@@ -14,7 +14,7 @@ class Song
     self.genre = genre
 
     @@artists << name
-    @@songs += 1
+    @@count += 1
     @@genres << genre
 
     if !(@@genre_count.has_key?(genre))
