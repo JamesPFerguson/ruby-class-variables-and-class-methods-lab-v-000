@@ -17,13 +17,6 @@ class Song
 
       @@genres << genre
 
-
-    if !(@@genre_count.has_key?(genre))
-      @@genre_count[genre] = 0
-    end
-
-    @@genre_count[genre] += 1
-
   end
 
   def self.count
